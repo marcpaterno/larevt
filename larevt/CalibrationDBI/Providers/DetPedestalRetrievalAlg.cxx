@@ -132,7 +132,7 @@ namespace lariov {
                      dataset.GetDataAsFloat(channel, "rms_err")};
       data.AddOrReplaceRow(pd);
     }
-    //SS: there may be  a better place for this cleanup call, TBD
+    //SS: there may be  a better place for this cleanup call
     fData.drop_unused();
     return fData.emplace(ts, data);
   }
